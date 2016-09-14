@@ -1,0 +1,10 @@
+﻿table{
+    width:30%;
+    border:1px solid yellow;
+}
+#deleteImg:hover{
+    cursor:pointer;
+}
+td{
+    padding-left:40px;
+}

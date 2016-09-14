@@ -1,0 +1,12 @@
+﻿<body ng-controller="Home">
+    <h2>Radacode server wallpaper generator</h2>
+    <br />
+    
+    <input id="ServerName" type="text" maxlength="42"/>
+    <input type="button" ng-click="Generate_Background()" value="Сгенерировать фон" />
+    <div style="clear:both;"></div>
+    <br />
+    <a><img id="image" width="550" height="400" ng-src="data:image/JPEG;base64,{{Image}}" /></a>
+    <br />
+    <input id="Download_button" type="button" ng-click="Download_Background()" value="Download" />
+</body>

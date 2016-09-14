@@ -1,0 +1,40 @@
+﻿
+<body ng-controller="Admin">
+
+    <link href="Content/Admin.css" rel="stylesheet" />
+
+    <br />
+    <br />
+    <br />
+    <input type="file" id="file" name="file" multiple
+           onchange="angular.element(this).scope().getFileDetails(this)" />
+    <br />
+    <input type="button" ng-click="uploadFiles()" value="Upload" />
+
+
+    <br />
+    <br />
+    <br />
+    <table>
+        <thead>
+            <tr>
+                <td>Номер</td>
+                <td>Имя файла</td>
+                <td>Картинка</td>
+                <td>Поменять на главной</td>
+                <td>Удалить</td>
+            </tr>
+        </thead>
+        <tr ng-repeat="x in images">
+            <td>{{$index}}</td>
+            <td>{{x.name}}</td>
+            <td><img width="150" height="100" ng-src="Content/Images/{{x.name}}" /></td>
+            <td>
+                <input type="checkbox" ng-model="x.checked" ng-click="updateSelection($index, images,x.name)" />
+            </td>
+            <td>
+                <img id="deleteImg" ng-click="removeItem($index,x.Name)" width="40" height="30" src="Content/delete_icon.jpg" />
+            </td>
+        </tr>
+    </table>
+</body>
