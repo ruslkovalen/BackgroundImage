@@ -35,11 +35,11 @@ namespace CreateBackDb.Modelshj
             ng.AddFontFile(pathfont);
            
             Graphics g = Graphics.FromImage(image);
-            Font f = new Font(ng.Families[0], 40F, FontStyle.Bold);
-            SizeF size = g.MeasureString(serverName,f);
+            
+            SizeF size = g.MeasureString(serverName,new Font( ng.Families[0],13,FontStyle.Bold));
             var w = size.Width;
-            RectangleF rectf = new RectangleF(2130-w+190, 1320, w+100, 800);
-            RectangleF rectimg = new RectangleF(2100-w+100, 1300, 113, 108);
+            RectangleF rectf = new RectangleF(1455-w+190, 861, w+100, 800);
+            RectangleF rectimg = new RectangleF(1455-w+70, 837, 112, 112);
             g.DrawImage(radacodeimg,rectimg);
 
             Color col = System.Drawing.ColorTranslator.FromHtml("#fdfdfd");
@@ -47,7 +47,7 @@ namespace CreateBackDb.Modelshj
             g.InterpolationMode = InterpolationMode.HighQualityBicubic;
             g.PixelOffsetMode = PixelOffsetMode.HighQuality;
             g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
-            g.DrawString(serverName, f, new SolidBrush(col), rectf);
+            g.DrawString(serverName, new Font(ng.Families[0],13,FontStyle.Bold), new SolidBrush(col), rectf);
        
             
 
