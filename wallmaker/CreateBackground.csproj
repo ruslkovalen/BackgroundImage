@@ -159,9 +159,9 @@
     <Content Include="Content\css\site.css" />
     <Content Include="Content\delete_icon.jpg" />
     <Content Include="Content\HomeImage.txt" />
-    <Content Include="Content\Images\background.png" />
+    <Content Include="Content\Images\background1.png" />
     <Content Include="Content\Images\asd.jpg" />
-    <Content Include="Content\Images\radacodelogo.png" />
+    <Content Include="Content\Images\radacodelogo1.png" />
     <Content Include="Content\Images\logo.jpg" />
     <Content Include="Index.html" />
     <Content Include="Scripts\angular-local-storage.min.js" />

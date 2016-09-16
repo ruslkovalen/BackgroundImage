@@ -27,7 +27,7 @@ namespace CreateBackDb.Modelshj
          
           
             Image image = Image.FromFile(src);
-            var pathradimg = HostingEnvironment.MapPath("~/Content/Images/radacodelogo.png");
+            var pathradimg = HostingEnvironment.MapPath("~/Content/Images/radacodelogo1.png");
             Image radacodeimg = Image.FromFile(pathradimg);
             PrivateFontCollection ng = new PrivateFontCollection();
             var pathfont = HostingEnvironment.MapPath("~/Content/fonts/Baron_Neue_Bold.otf");
