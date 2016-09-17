@@ -138,6 +138,7 @@ app.controller('Home', function ($scope, $http) {
     var image = document.getElementById("image");
     var download_button = document.getElementById("Download_button");
     image.style.display = "none";
+   
     download_button.style.display = "none";
     var serverName;
     $scope.Generate_Background = function () {

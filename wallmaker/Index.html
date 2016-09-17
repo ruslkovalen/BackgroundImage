@@ -1,3 +1,4 @@
+﻿
 ﻿<!DOCTYPE html>
 
 <html ng-app="AngularAuthApp">
@@ -10,20 +11,22 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/css/site.css" rel="stylesheet" />
     <link href="Content/css/loading-bar.css" rel="stylesheet" />
-
-
-
+    <link href="uikit.css" rel="stylesheet" />
+    <link href="Content/UIkit/css2/autocomplete.min.css" rel="stylesheet" />
+    <script src="uikit.js"></script>
+    <script src="Content/UIkit/js/autocomplete.min.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet" />
     <script src="Scripts/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
     <script src="Scripts/angular-ui-router.min.js"></script>
 
-    
+
     <script src="Scripts/angular-local-storage.min.js"></script>
     <script src="Scripts/loading-bar.min.js"></script>
     <script src="Scripts/FileSaver.min.js"></script>
 
     <script src="app/app.js?v=3"></script>
-
+    x
     <script src="app/services/ordersService.js"></script>
 
     <script src="app/controllers/indexController.js"></script>
@@ -32,32 +35,72 @@
 
     <script src="app/services/authInterceptorService.js?v=2"></script>
     <script src="app/services/authService.js"></script>
-
+ 
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <style>
+        .uk-navbar{
+  text-align:center;
+ 
+}
+.uk-navbar-center,uk-navbar-content{
+   display: inline-block;
+   float: none; 
+   float: none;
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    display: block;
+    height: 0px;
+    padding: 0px;
+   
+}
+ .uk-form{
+        position: fixed; /* or absolute */
+  top: 2  0%;
+  left: 30%;
+    }
+    </style>
 </head>
-<body ng-controller="Index">
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" data-ng-controller="indexController">
-        <div class="container">
-            <div class="navbar-header">
 
-                <a class="navbar-brand" ui-sref="Home">Home</a>
-                <a class="navbar-brand" data-ng-click="checkAccess()">Admin</a>
-
-            </div>
-            <div class="collapse navbar-collapse" data-collapse="!navbarExpanded">
-                <ul class="nav navbar-nav navbar-right">
-                    <li data-ng-hide="!authentication.isAuth"><a>Welcome {{authentication.userName}}</a></li>
-                    <li data-ng-hide="!authentication.isAuth"><a href="" data-ng-click="logOut()">Logout</a></li>
-                    <li data-ng-hide="authentication.isAuth"> <a ui-sref="login">Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<body ng-controller="Index"> 
     <div class="container">
         <div ui-view></div>
     </div>
+    <nav class="uk-navbar navbar-user uk-visible-large"data-ng-controller="indexController">
+   <div class="uk-navbar-center uk-navbar-content">Radacode server wallpaper generator</div>
 
+        <div class="uk-container uk-container-center">
+         
+            <ul class="uk-navbar-nav">
+                <li class="">
+                    <a ui-sref="Home">Home</a>
+                </li>
+                
+            </ul>
+           
+            <div class="uk-navbar-flip">
+                <ul class="uk-navbar-nav">
+                    <li data-ng-hide="!authentication.isAuth"><a>Welcome {{authentication.userName}}</a></li>
+                    <li data-ng-hide="!authentication.isAuth"><a href="" data-ng-click="logOut()">Logout</a></li>
+                    <li data-ng-hide="authentication.isAuth"> <a ui-sref="login"><i class="uk-icon-sign-in" aria-hidden="true"></i> Log In</a></li>
+                    <li>
+                        <a class="uk-navbar-brand" data-ng-click="checkAccess()">Admin</a>
+                    </li>
+                    <li>
+                        <a href="" data-ng-click="checkAccess()">
+                            
+                        </a>
+                    </li>
+                  
+                </ul>
+            </div>
+          
+        </div>
+        
+    </nav>
 
 
 </body>

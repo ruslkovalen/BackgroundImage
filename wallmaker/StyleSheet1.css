@@ -1,0 +1,45 @@
+﻿
+.uk-navbar {
+    background: #333;
+    color: #fff;
+}
+.uk-navbar {
+    background: #eee;
+    color: #444;
+    width:100%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1030;
+
+}
+
+
+
+
+
+.uk-navbar {
+     background: #333;
+    color: #fff;
+    
+
+}
+        .uk-navbar-nav > li > a {
+            display: block;
+            box-sizing: border-box;
+            text-decoration: none;
+            height: 40px;
+            padding: 0 15px;
+            line-height: 40px;
+            color: #fff;
+            font-size: 14px;
+            font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-weight: 400;
+        }
+
+selection {
+    background: #39f;
+    color: #fff;
+    text-shadow: none;
+}

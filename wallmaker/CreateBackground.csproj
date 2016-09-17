@@ -152,9 +152,9 @@
     <Content Include="app\views\refresh.html" />
     <Content Include="app\views\signup.html" />
     <Content Include="app\views\tokens.html" />
+    <Content Include="Content\UIkit\css2\autocomplete.min.css" />
+    <Content Include="Content\UIkit\js\autocomplete.min.js" />
     <Content Include="Content\Admin.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\loading-bar.css" />
     <Content Include="Content\css\site.css" />
     <Content Include="Content\delete_icon.jpg" />
@@ -172,6 +172,19 @@
     <Content Include="Scripts\FileSaver.min.js" />
     <Content Include="Scripts\Home.js" />
     <Content Include="Content\fonts\Baron_Neue_Bold.otf" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="FontAwesome.otf" />
+    <Content Include="fontawesome-webfont.ttf" />
+    <Content Include="fontawesome-webfont.woff" />
+    <Content Include="fontawesome-webfont.woff2" />
+    <Content Include="fonts\Baron_Neue_Bold.otf" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -189,6 +202,11 @@
     <Content Include="Scripts\Script.js" />
     <Content Include="Scripts\UploadAdmin.js" />
     <None Include="Scripts\_references.js" />
+    <Content Include="Content\UIkit\css2\uikit.min.css" />
+    <Content Include="Content\UIkit\js\uikit.min.js" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="uikit.css" />
+    <Content Include="uikit.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +229,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\UIkit\fonts2\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
