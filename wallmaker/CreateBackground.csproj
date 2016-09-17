@@ -176,10 +176,6 @@
     <Content Include="Content\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\fonts\FontAwesome.otf" />
-    <Content Include="FontAwesome.otf" />
-    <Content Include="fontawesome-webfont.ttf" />
-    <Content Include="fontawesome-webfont.woff" />
-    <Content Include="fontawesome-webfont.woff2" />
     <Content Include="fonts\Baron_Neue_Bold.otf" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />

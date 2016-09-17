@@ -1,8 +1,8 @@
 ﻿
 ﻿<!DOCTYPE html>
-
 <html ng-app="AngularAuthApp">
 <head>
+   
     <base href="/">
     <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -19,50 +19,17 @@
     <script src="Scripts/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
     <script src="Scripts/angular-ui-router.min.js"></script>
-
-
     <script src="Scripts/angular-local-storage.min.js"></script>
     <script src="Scripts/loading-bar.min.js"></script>
     <script src="Scripts/FileSaver.min.js"></script>
 
     <script src="app/app.js?v=3"></script>
-    x
     <script src="app/services/ordersService.js"></script>
-
     <script src="app/controllers/indexController.js"></script>
-
     <script src="app/controllers/loginController.js"></script>
-
     <script src="app/services/authInterceptorService.js?v=2"></script>
     <script src="app/services/authService.js"></script>
- 
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <style>
-        .uk-navbar{
-  text-align:center;
- 
-}
-.uk-navbar-center,uk-navbar-content{
-   display: inline-block;
-   float: none; 
-   float: none;
-    text-align: center;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  
-    display: block;
-    height: 0px;
-    padding: 0px;
-   
-}
- .uk-form{
-        position: fixed; /* or absolute */
-  top: 2  0%;
-  left: 30%;
-    }
-    </style>
 </head>
 
 <body ng-controller="Index"> 
@@ -70,15 +37,12 @@
         <div ui-view></div>
     </div>
     <nav class="uk-navbar navbar-user uk-visible-large"data-ng-controller="indexController">
-   <div class="uk-navbar-center uk-navbar-content">Radacode server wallpaper generator</div>
-
+   <div class="uk-navbar-center uk-navbar-content"><p id="test">Radacode server wallpaper generator</p></div>
         <div class="uk-container uk-container-center">
-         
             <ul class="uk-navbar-nav">
                 <li class="">
-                    <a ui-sref="Home">Home</a>
+                    <a ui-sref="Home"><i class="uk-icon-home" aria-hidden="true"></i>Home</a>
                 </li>
-                
             </ul>
            
             <div class="uk-navbar-flip">
@@ -91,17 +55,11 @@
                     </li>
                     <li>
                         <a href="" data-ng-click="checkAccess()">
-                            
                         </a>
                     </li>
-                  
                 </ul>
             </div>
-          
         </div>
-        
     </nav>
-
-
 </body>
 </html>
