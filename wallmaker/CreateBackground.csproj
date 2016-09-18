@@ -152,6 +152,7 @@
     <Content Include="app\views\refresh.html" />
     <Content Include="app\views\signup.html" />
     <Content Include="app\views\tokens.html" />
+    <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\UIkit\css2\autocomplete.min.css" />
     <Content Include="Content\UIkit\js\autocomplete.min.js" />
     <Content Include="Content\Admin.css" />
