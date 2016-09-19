@@ -27,7 +27,7 @@ namespace CreateBackDb.Modelshj
          
           
             Image image = Image.FromFile(src);
-            var pathradimg = HostingEnvironment.MapPath("~/Content/Images/radacodelogo1.png");
+            var pathradimg = HostingEnvironment.MapPath("~/Content/Images/finishlogo.png");
             Image radacodeimg = Image.FromFile(pathradimg);
             PrivateFontCollection ng = new PrivateFontCollection();
             var pathfont = HostingEnvironment.MapPath("~/Content/fonts/Baron_Neue_Bold.otf");
@@ -35,27 +35,29 @@ namespace CreateBackDb.Modelshj
             ng.AddFontFile(pathfont);
            
             Graphics g = Graphics.FromImage(image);
-            Font f = new Font(ng.Families[0], 40F, FontStyle.Bold);
-            SizeF size = g.MeasureString(serverName,f);
+            Font f = new Font(ng.Families[0], 50.2F, FontStyle.Regular);
+            SizeF size = g.MeasureString(serverName.ToLower(),f);
             var w = size.Width;
-            RectangleF rectf = new RectangleF(2130-w+190, 1320, w+100, 800);
-            RectangleF rectimg = new RectangleF(2100-w+100, 1300, 113, 108);
+            RectangleF rectf = new RectangleF(2130-w+180, 1314, w+100, 800);
+            RectangleF rectimg = new RectangleF(2054-w+133, 1291, 112, 112);
             g.DrawImage(radacodeimg,rectimg);
+            g.DrawImage(radacodeimg, rectimg);
 
-            Color col = System.Drawing.ColorTranslator.FromHtml("#fdfdfd");
+            Color col = System.Drawing.ColorTranslator.FromHtml("#ffffff");
             g.SmoothingMode = SmoothingMode.AntiAlias;
             g.InterpolationMode = InterpolationMode.HighQualityBicubic;
             g.PixelOffsetMode = PixelOffsetMode.HighQuality;
             g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             g.DrawString(serverName, f, new SolidBrush(col), rectf);
-       
-            
+            g.DrawString(serverName, f, new SolidBrush(col), rectf);
+
+
 
             g.Flush();
             g.Dispose();
 
             var stream = new MemoryStream();
-            image.Save(stream, ImageFormat.Jpeg);
+            image.Save(stream, ImageFormat.Png);
 
             byte[] array = stream.ToArray();
 

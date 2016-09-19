@@ -153,6 +153,15 @@
     <Content Include="app\views\signup.html" />
     <Content Include="app\views\tokens.html" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\Images\background.png" />
+    <Content Include="Content\Images\finishlogo.png" />
+    <Content Include="Content\Images\logorad.png" />
+    <Content Include="Content\Images\Logoradacode.png" />
+    <Content Include="Content\Images\QWER.png" />
+    <Content Include="Content\Images\temp.png" />
+    <Content Include="Content\Images\TEST.png" />
+    <Content Include="Content\Images\TEST2.png" />
+    <Content Include="Content\Images\TEST3.png" />
     <Content Include="Content\UIkit\css2\autocomplete.min.css" />
     <Content Include="Content\UIkit\js\autocomplete.min.js" />
     <Content Include="Content\Admin.css" />
