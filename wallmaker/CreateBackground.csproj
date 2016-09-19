@@ -153,6 +153,7 @@
     <Content Include="app\views\signup.html" />
     <Content Include="app\views\tokens.html" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\HomeImage.txt" />
     <Content Include="Content\Images\background.png" />
     <Content Include="Content\Images\finishlogo.png" />
     <Content Include="Content\UIkit\css2\autocomplete.min.css" />
